@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Referral link</title>
+</head>
+<body>
+  <main>
+    <div class="images_wrapper">
+      <div class="image_desktop">
+        <img src="img/desktop_backround.png" alt="">
+      </div>
+      <div class="image_mobile">
+        <img src="img/mobile_wallpaper.png" alt="">
+      </div>
+    </div>
+  </main>
+
+  <script>
+    var block = document.getElementsByClassName('images_wrapper');
+    block[0].addEventListener("click", myFunction);
+
+    function myFunction() {
+      window.open('https://www.prpl.io/?ref='+window.location.href, '_blank');
+    }
+  </script>
+</body>
+</html>

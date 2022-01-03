@@ -1,0 +1,106 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+html {
+  background-color: #121212;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  position: relative;
+}
+
+.image_desktop,
+.image_mobile {
+  height: 100%;
+}
+
+.image_desktop img,
+.image_mobile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image_mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .image_desktop {
+    display: none;
+  }
+
+  .image_mobile {
+    display: block;
+  }
+}
